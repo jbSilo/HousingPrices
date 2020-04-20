@@ -1,57 +1,59 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://www.opengis.net/kml/2.2">
+<kml>
 <Document>
-  <name>Data+BalloonStyle</name>
-  <Style id="golf-balloon-style">
-    <BalloonStyle>
-      <text>
-        <![CDATA[
-          This is $[name]
-          This is hole $[holeNumber]
-          The par for this hole is $[holePar]
-          The yardage is $[holeYardage]
-        ]]>
-      </text>
-    </BalloonStyle>
-  </Style>
-  <!-- Shared style sample
-        Two Placemarks use the same balloon template
-  -->
-  <Placemark>
-    <name>Club house</name>
-    <styleUrl>#golf-balloon-style</styleUrl>
-    <ExtendedData>
-      <Data name="holeNumber">
-        <value>1</value>
-      </Data>
-      <Data name="holeYardage">
-        <value>234</value>
-      </Data>
-      <Data name="holePar">
-        <value>4</value>
-      </Data>
-    </ExtendedData>
-    <Point>
-      <coordinates>-111.956,33.5043</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>By the lake</name>
-    <styleUrl>#golf-balloon-style</styleUrl>
-    <ExtendedData>
-      <Data name="holeNumber">
-        <value>5</value>
-      </Data>
-      <Data name="holeYardage">
-        <value>523</value>
-      </Data>
-      <Data name="holePar">
-        <value>5</value>
-      </Data>
-    </ExtendedData>
-    <Point>
-      <coordinates>-111.95,33.5024</coordinates>
-    </Point>
-  </Placemark>
+<name>KmlFile</name>
+<Style id="west_campus_style">
+<IconStyle>
+<Icon>
+<href>
+https://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png
+</href>
+</Icon>
+</IconStyle>
+<BalloonStyle>
+<text>$[video]</text>
+</BalloonStyle>
+</Style>
+<Placemark>
+<name>Google West Campus 1</name>
+<styleUrl>#west_campus_style</styleUrl>
+<ExtendedData>
+<Data name="video">
+<value>
+<iframe width="480" height="360" src="https://www.youtube.com/embed/ZE8ODPL2VPI" frameborder="0" allowfullscreen></iframe><br><br>
+</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-122.0914977709329,37.42390182131783,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Google West Campus 2</name>
+<styleUrl>#west_campus_style</styleUrl>
+<ExtendedData>
+<Data name="video">
+<value>
+<iframe width="480" height="360" src="https://www.youtube.com/embed/nb4gvrNrDWw" frameborder="0" allowfullscreen></iframe><br><br>
+</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-122.0926995893311,37.42419403634421,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Google West Campus 3</name>
+<styleUrl>#west_campus_style</styleUrl>
+<ExtendedData>
+<Data name="video">
+<value>
+<iframe width="480" height="360" src="https://www.youtube.com/embed/0hhiEjf7_NA" frameborder="0" allowfullscreen></iframe><br><br>
+</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-122.0922532985281,37.42301710721216,0</coordinates>
+</Point>
+</Placemark>
 </Document>
 </kml>
