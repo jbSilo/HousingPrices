@@ -1,24 +1,27 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<kml xmlns="http://www.opengis.net/kml/2.2">
-<Document id="root_doc">
-<Schema name="zillow_neighborhoods" id="zillow_neighborhoods">
-	<SimpleField name="state" type="string"></SimpleField>
-	<SimpleField name="county" type="string"></SimpleField>
-	<SimpleField name="city" type="string"></SimpleField>
-	<SimpleField name="regionid" type="string"></SimpleField>
-</Schema>
+<Style id="west_campus_style">
+  <IconStyle>
+    <Icon>
+      <href>https://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png
+      </href>
+    </Icon>
+  </IconStyle>
+  <BalloonStyle>
+    <text>$[video]</text>
+  </BalloonStyle>
+</Style>
+
 <Placemark>
-	<name>Merrimont Hills</name>
-	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>1</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#zillow_neighborhoods">
-		<SimpleData name="state">NC</SimpleData>
-		<SimpleData name="county">Forsyth</SimpleData>
-		<SimpleData name="city">Winston-Salem</SimpleData>
-		<SimpleData name="regionid">737892</SimpleData>
-	</SchemaData></ExtendedData>
+    <name>Google West Campus 1</name>
+    <styleUrl>#west_campus_style</styleUrl>
+    <ExtendedData>
+      <Data name="video">
+        <value><![CDATA[<iframe width="640" height="360"
+          src="https://www.youtube.com/embed/ZE8ODPL2VPI" frameborder="0"
+          allowfullscreen></iframe><br><br>]]></value>
+      </Data>
+    </ExtendedData>
     <Point>
       <coordinates>-122.0914977709329,37.42390182131783,0</coordinates>
     </Point>
-
 </Placemark>
-</Document></kml>
+
