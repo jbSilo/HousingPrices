@@ -10,7 +10,7 @@
 <Folder><name>zillow_neighborhoods</name>
   <Placemark>
 	<name>Merrimont Hills</name>
-	<Style><LineStyle><color>ff7711ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<Style><LineStyle><color>ff7711ff</color></LineStyle><PolyStyle><fill>1</fill></PolyStyle></Style>
 	<ExtendedData><SchemaData schemaUrl="#zillow_neighborhoods">
 		<SimpleData name="state">NC</SimpleData>
 		<SimpleData name="county">Forsyth</SimpleData>
@@ -21,7 +21,7 @@
   </Placemark>
   <Placemark>
 	<name>Mount Tabor</name>
-	<Style><LineStyle><color>ff7711ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<Style><LineStyle><color>ff7711ff</color></LineStyle><PolyStyle><fill>1</fill></PolyStyle></Style>
 	<ExtendedData><SchemaData schemaUrl="#zillow_neighborhoods">
 		<SimpleData name="state">NC</SimpleData>
 		<SimpleData name="county">Forsyth</SimpleData>
