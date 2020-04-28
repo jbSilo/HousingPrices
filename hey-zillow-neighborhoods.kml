@@ -8,7 +8,7 @@
 	<SimpleField name="regionid" type="string"></SimpleField>
 </Schema>
 <Folder><name>zillow_neighborhoods</name>
-<Style id="stylesel_0"><LineStyle><color>#83b6e7</color></LineStyle><PolyStyle><fill>1</fill></PolyStyle></Style>
+<Style id="stylesel_0"><LineStyle><color>83b6e7ff</color></LineStyle><PolyStyle><fill>1</fill></PolyStyle></Style>
   <Placemark>
 	<name>Freedom Park</name>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
